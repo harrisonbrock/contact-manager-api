@@ -1,0 +1,40 @@
+POST http://localhost:9000/api/contact
+Accept: */*
+Cache-Control: no-cache
+
+{
+ "firstName":"Buster",
+ "lastName":"Brock",
+ "email":"harrison@me.com"
+}
+
+<> 2018-09-13T052415.404.html
+
+###
+
+POST http://localhost:9000/api/contact
+Accept: */*
+Cache-Control: no-cache
+
+{
+ "firstName":"Buster",
+ "lastName":"Brock",
+ "email":"harrison@me.com"
+}
+
+###
+
+POST http://localhost:9000/api/contact
+Accept: */*
+Cache-Control: no-cache
+
+{
+ "firstName":"Buster",
+ "lastName":"Brock",
+ "email":"harrison@me.com"
+}
+
+<> 2018-09-13T052200.404.html
+
+###
+
