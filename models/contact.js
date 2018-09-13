@@ -18,10 +18,8 @@ const ContactSchema = mongoose.Schema({
 	title: {
 		type: String
 	},
-	company: {
-		companyName: {
-			type: String
-		}
+	companyName: {
+		type: String
 	}
 });
-models.exports = Contact = mongoose.model('contacts', ContactSchema);
+module.exports = Contact = mongoose.model('contacts', ContactSchema);
