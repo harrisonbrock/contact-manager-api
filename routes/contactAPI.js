@@ -21,6 +21,15 @@ router.post('/', asyncHandler(async (req, res, next) => {
 
 }));
 
+
+// Get All Contact
+router.get('/', asyncHandler(async (req, res, next) => {
+
+	const contacts = await Contact.find();
+	res.send(contacts);
+
+
+}));
 router.get('/test', asyncHandler(async (req, res, next) => {
 	res.send('testing contact');
 
