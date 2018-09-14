@@ -30,6 +30,19 @@ router.get('/', asyncHandler(async (req, res, next) => {
 
 
 }));
+
+// Get By Id
+router.get('/:id', asyncHandler(async (req, res, next) => {
+
+	const contact = await Contact.findById(req.params.id);
+	if (contact) {
+		res.send(contact)
+	} else {
+		res.send(`No Contact found by Id: ${req.params.id}`)
+	}
+
+}));
+
 router.get('/test', asyncHandler(async (req, res, next) => {
 	res.send('testing contact');
 
